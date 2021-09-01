@@ -7,4 +7,7 @@ CORS(app)
 
 @app.route('/')  # représente la racine du site
 def index():  # le nom n’est pas important pour le système
-    return 'Felis Catus'
+    return '<p>Hello, World!</p>'
+
+if __name__ == "__main__":  # lance l’application
+    app.run(debug=True)
