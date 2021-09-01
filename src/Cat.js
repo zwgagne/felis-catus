@@ -1,5 +1,5 @@
-import { json } from 'body-parser';
 import React, { useState } from 'react'
+import './App.css'
 
 function Cat() {
     const [url, setUrl] = useState('')
@@ -9,9 +9,17 @@ function Cat() {
                 return res.json();
             }
             throw new Error('Meeeeeeeeooooow');
-        }, networkError=> console.log(networkError.message)).then(jsonRes=>{
+        }, networkError=> console.log(networkError.message)
+        ).then(jsonRes=>{
             setUrl(jsonRes[0].url)
         })
 
     }
+    return(
+         <div className="catCard">
+            <img src={url} className="catImg"/>
+            <button onClick={fetch_data}>Meow!</button>
+        </div>
+    )
 }
+export default Cat
