@@ -6,9 +6,7 @@ interface Props {
 
 const CatImage: React.FC<Props> = ({ url }) => {
     return (
-        
-        <img src={url} />
-    
+        <img className="card" src={url} />
     )
 }
 

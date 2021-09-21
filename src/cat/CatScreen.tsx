@@ -23,11 +23,14 @@ const CatScreen: React.FC = () => {
   return (
     <>
       <h1>MEOOOOWEVERYYYYWHERE</h1>
-
+     
+      <div className="card">
       {cats.map((cat: Cat) => (
+      
         <CatImage url={cat.url} key={cat.id} />
       ))}
 
+</div>
       <button onClick={goToNextPage}>NEXT</button>
     </>
   );
