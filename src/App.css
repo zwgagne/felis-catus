@@ -17,8 +17,25 @@
   justify-content: center;
   align-items: center;
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gallery .CatImage {
+  background-color: #5c59ff;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .catImg{
-  max-height: 40%;
-  max-width: 40%;
-  margin: 1rem;
+  width: 100%;
+  height: auto;
 }
