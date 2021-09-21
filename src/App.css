@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 *{
-  padding: 0;
-  margin: 0;
+  text-align: center;
+  font-family: Roboto;
+}
+.meow{
+  font-weight: 700;
+}
+.cat-container{
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  display: flex;
+  flex: 1 0 20%;
+  width: 20rem;
+  height: 20rem;
+
+
+}
+
+.cat-img{
+  max-height: 100%;
+  max-width: 100%;
+}
+.display-cat {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pagination {
+  margin-top: 80px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.pagination > .active > a{
+  background-color: #242424 ;
+  border-color: #242424 ;
+  color: #fff;
+}
+.pagination > li > a{
+  border: 1px solid #242424 ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #242424 ;
+  border-color: #242424;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: #242424
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}

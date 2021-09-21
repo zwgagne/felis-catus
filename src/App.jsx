@@ -1,14 +1,14 @@
 import React from "react";
+import CatScreen from "./components/CatScreen"
 
+function App() {
 
-import CatScreen from "./cat/CatScreen";
-
-class App extends React.Component {
-  render() {
-    return (
-          <CatScreen />
-    );
-  }
+  return (
+    <>
+      <h1 className="meow">MEOWEVERYWHERE</h1>
+      <CatScreen />
+    </>
+  )
 }
 
 export default App;
